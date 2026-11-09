@@ -2283,25 +2283,52 @@ TOP 버튼
     /* ==================
     모바일 애슐리 매장 찾기 
     =====================*/
+.store-finder-inner {
+    width: 93%;
+}
 
-    .store-finder-inner {
-        width: 90%;
-    }
+.finder-button {
+    bottom: 15%;
 
-    .finder-button {
-        bottom: 18%;
-        gap: 0.3rem;
-        font-size: clamp(14px, 2.5vw, 18px);
-    }
+    padding:
+        clamp(0.35rem, 1.52vw, 0.5rem)
+        clamp(0.7rem, 3.04vw, 1rem);
 
-    .finder-button img {
-        width: 14px;
-    }
+    gap: clamp(0.2rem, 0.87vw, 0.3rem);
+    font-size: clamp(12px, 3.26vw, 18px);
+    border-width: 1px;
+}
+
+.finder-button img {
+    width: clamp(12px, 3.26vw, 14px);
+}
 
 }
 
 
+/* 모바일에서 매장찾기 버튼 제대로 보이게! */
+/* 
+@media (max-width: 368px){
 
+    
+    .store-finder-inner {
+        width: 93%;
+    }
+
+    .finder-button {
+        bottom: 15%;
+        gap: 0.2rem;
+        padding: 0.35rem 0.7rem;
+        font-size: clamp(12px, 2.5vw, 18px);
+        border-width: 1px;
+    }
+
+    .finder-button img {
+        width: 12px;
+    }
+
+}
+ */
 
 
 /* 태블릿 + 모바일 헤더 ------------------------------- */
